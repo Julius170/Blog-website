@@ -31,7 +31,9 @@ app.get('/compose', function(req, res) {
   res.render("compose")
 })
 
-
+app.post('/compose', function(req, res) {
+  console.log(req.body.newpost)
+})
 
 
 app.listen(3001, function() {
