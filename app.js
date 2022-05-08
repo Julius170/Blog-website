@@ -19,9 +19,13 @@ app.get('/', function(req, res) {
   res.render("home", {text: homeStartingContent})
 });
 
+app.get('/about', function(req, res) {
+  res.render("about", {aboutMeContent: aboutContent})
+});
 
-
-
+app.get('/contact', function(req, res) {
+  res.render('contact' , { contactMeContent: contactContent})
+})
 
 
 
