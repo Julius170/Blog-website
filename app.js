@@ -22,7 +22,7 @@ const posts = [];
 
 
 app.get('/', function(req, res) {
-  res.render("home", {text: homeStartingContent})
+  res.render("home", {text: homeStartingContent, posts:posts })
 });
 
 app.get('/about', function(req, res) {
@@ -30,7 +30,7 @@ app.get('/about', function(req, res) {
 });
 
 app.get('/contact', function(req, res) {
-  res.render('contact' , { contactMeContent: contactContent })
+  res.render('contact' , { contactMeContent: contactContent})
 });
 
 app.get('/compose', function(req, res) {
